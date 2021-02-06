@@ -1,0 +1,149 @@
+body{
+    font-family: 'Fira Code', monospace;
+}
+a{
+    text-decoration: none;
+}
+
+p{
+    margin-bottom: 2px;
+}
+.prfls{
+    font-size: 20px;
+}
+.logo-size{
+    font-size: 40px;
+    transition: 1s;
+}
+.logo-size:hover{
+    font-size: 50px;
+    transition: 1s;
+}
+
+.desktopHide{
+    display: none;
+}
+
+.spacenav-1{
+    padding-left: .1rem;
+    padding-right: .1rem;   
+    color: #E5E5E5;
+}
+
+.spacenav-2{
+    padding-left: .1rem;
+    padding-right: .1rem; 
+    color: #E5E5E5;  
+}
+.MobileHide{
+    display: flex;
+    flex-direction: row;
+}
+.navbar{
+    background-color: #34626C;
+}
+
+.fontsnav{
+    color: #E5E5E5;
+    font-family: 'Righteous', cursive;
+    transition: 1s;
+}
+.fontsnav:hover{
+    color:#0E0D0D;
+    transition: 1s;
+}
+
+
+#main-Menu{
+    background-color: #E5E5E5;
+}
+
+.hover-text{
+    transition: 2s;
+}
+.hover-text:hover{
+    color: #E5E5E5;
+    transition: 1s;
+}
+.profiles-link{
+    color: #0E0D0D;
+    transition: 2s;
+}
+.profiles-link:hover{
+    color:#34626C;
+    transition: 1s;
+}
+
+.mainMenu{
+    padding-bottom: 5rem;
+}
+.experience-logo{
+    width: 250px;
+    height: 250px;
+    transition: 1s;
+}
+.experience-logo:hover{
+    width: 280px;
+    height: 280px;
+    transition: 1s;
+}
+
+.rounded-img{
+    border-radius: 50%;
+    width: 340px;
+    height: 340px;
+    transition: 1s;
+}
+.rounded-img:hover{
+    position:static;
+    width: 380px;
+    height: 380px;
+    transition: 1s;
+    border-radius: 25%;
+}
+
+.footerfonts{
+    color: #E5E5E5;
+}
+
+.box-cv{
+    background-color: antiquewhite;
+    width: 700px;
+    height: 400px;
+    border-radius: 5%;
+}
+
+.ex-padd{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+#experiences{
+    background-color: #839B97;
+}
+
+#footers{
+    background-color: #34626C;
+}
+
+@media only screen and (max-width: 980px){
+    .desktopHide{
+        display: block;
+    }
+    .MobileHide{
+        margin-top: 7px;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    .mobile-p{
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+}
+@media only screen and (max-width: 415px){
+    .mobile-pict{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
