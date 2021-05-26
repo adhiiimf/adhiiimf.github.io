@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+
+#project{
+    background-color: #9FC7E4;
+    padding: 3rem 1rem 4rem 1rem;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.project-box {
+	width: 275px;
+	height: 275px;
+	background-color: #046CCB;
+	border-radius: 57px;
+	padding: 1.5rem;
+    filter: drop-shadow(6px 5px 3px rgb(38, 75, 109));
+	border: none;
+}
+
+.projectLogo{
+    width: 162px;
+    height: auto;
+    border-radius: 55px;
+    animation: projecteffects 3s infinite alternate;
+}
+
+@keyframes projecteffects {
+    0%{
+        transform: scale(0.8);
+    }
+    100%{
+        transform: scale(1);
+        filter:drop-shadow(5px 4px 4px rgb(32, 32, 32));
+    }
+}
+
+.clickBox{
+    background-color: #9FC7E4;
+    padding: 0.3rem;
+    width: 154px;
+    height: 37px;
+    border-radius: 25px;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.clickBox:hover {
+	background-color: #1e364d;
+	color: #ffeece;
+    transition: 0.5s;
+    transform: translateY(-5px);
+}
+
+.project-title {
+	font-size: 3rem;
+	text-shadow: 5px 3px 0px rgb(23, 115, 200),5px 3px 1px rgb(95, 95, 95),5px 4px 4px rgb(57, 57, 57);
+	color: white;
+}
