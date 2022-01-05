@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
 body{
-    font-family: 'Fira Code', monospace;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 a{
     text-decoration: none;
@@ -46,7 +47,6 @@ p{
 
 .fontsnav{
     color: #E5E5E5;
-    font-family: 'Righteous', cursive;
     transition: 1s;
 }
 .fontsnav:hover{
