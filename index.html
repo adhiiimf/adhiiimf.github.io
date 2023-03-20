@@ -1,273 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Adhi's website</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon_amf/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon_amf/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon_amf/favicon-16x16.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="/js/tailwindCustom.js"></script>
+    <link href="/resources/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="/assets/fontawesome/all.min.css">
-    <link rel="stylesheet" href="/styles/main.css">
     <script src="/assets/fontawesome/all.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Saira&display=swap" rel="stylesheet">
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 </head>
-<body class="bg-priority1 w-full" style="font-family: 'Saira', sans-serif;">
-
-<!-- navbar -->
-<section class="nav pt-8 px-5 md:pt-12 md:px-12">
-    <div class="flex justify-between bg-priority2 relative py-4 px-5 md:py-5 md:px-5 rounded-3xl">
-        <div class="items-center">
-            <img class="cursor-pointer w-9 h-9 md:w-11 md:h-11 duration-300 hover:ease-out hover:scale-105 hover:duration-300" src="/assets/favicon_amf/android-chrome-512x512.png" alt="logo">
-        </div>
-        <div class="items-center">
-            <ul class="flex">
-                <li>
-                    <a href="https://www.instagram.com/adhiiimf/" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-instagram w-9 h-9 md:w-11 md:h-11 text-priority3 duration-300 hover:ease-out hover:scale-105 hover:duration-300"></i>
-                    </a>
-                </li>
-                <li class="mx-3">
-                    <a href="https://github.com/adhiiimf" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github w-9 h-9 md:w-11 md:h-11 text-priority3 duration-300 hover:ease-out hover:scale-105 hover:duration-300"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/adhi-muhammad-fahmi-571317213/" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-linkedin w-9 h-9 md:w-11 md:h-11 text-priority3 duration-300 hover:ease-out hover:scale-105 hover:duration-300"></i>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-<section class="pt-10 md:pt-12 px-5">
-    <div class="text-center font-bold">
-        <h1 class="text-4xl md:text-5xl">Hi, Welcome!</h1>
-        <h2 class="text-4xl md:text-5xl my-4">I'am Adhi Muhammad Fahmi</h2>
-        <h5 class="text-xl md:text-2xl">(Undegraduate Bachelor of Electrical Engineering)</h5>
-    </div>
-
-    <div class="flex justify-center pt-8">
-        <img class="rounded-full w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96 border-8 border-priority2 cursor-pointer duration-300 hover:ease-out hover:scale-105 hover:duration-300" src="/assets/adhimfAvatar.jpg" alt="avaAdhi">
-    </div>
-</section>
-
-<div class="px-5 md:px-12 pt-12 md:pt-20">
-    <div class="h-1 w-full bg-priority4 rounded-full"></div>
-</div>
-
-<section class="pt-12 md:pt-20 flex flex-col items-center px-12">
-    <div class="flex justify-center border-8 border-priority2 px-4 py-4 w-64 md:w-80">
-        <h2 class="text-3xl md:text-5xl font-bold">Overview</h2>
-    </div>
-
-    <div class="pt-12">
-        <ul class="col lg:flex">
-            <li class="text-center">
-                <button class="cursor-pointer" onclick='return scrollToElement("skills")'>
-                    <div class="flex justify-center w-56 py-6 md:w-64 md:py-8 bg-priority5 border-4 border-priority2 rounded-3xl duration-300 hover:ease-out hover:scale-105 hover:duration-300">
-                        <span class="font-bold text-2xl md:text-4xl">Skills</span>
-                    </div>
-                </button>
-            </li>
-            <li class="lg:mx-20 mx-0 text-center lg:my-0 my-5">
-                <button class="cursor-pointer" onclick='return scrollToElement("experiences")'>
-                    <div class="flex justify-center w-56 py-6 md:w-64 md:py-8 bg-priority5 border-4 border-priority2 rounded-3xl duration-300 hover:ease-out hover:scale-105 hover:duration-300">
-                        <span class="font-bold text-2xl md:text-4xl">Experiences</span>
-                    </div>
-                </button>
-            </li>
-            <li class="text-center">
-                <button class="cursor-pointer" onclick='return scrollToElement("projects")'>
-                    <div class="flex justify-center w-56 py-6 md:w-64 md:py-8 bg-priority5 border-4 border-priority2 rounded-3xl duration-300 hover:ease-out hover:scale-105 hover:duration-300">
-                        <span class="font-bold text-2xl md:text-4xl">Projects</span>
-                    </div>
-                </button>
-            </li>
-        </ul>
-    </div>
-</section>
-
-<div class="px-5 md:px-12 pt-12 md:pt-20">
-    <div class="h-1 w-full bg-priority4 rounded-full"></div>
-</div>
-
-<section id="skills" class="pt-12 md:pt-20 flex flex-col items-center px-12">
-    <div class="flex justify-center border-8 border-priority2 px-4 py-4 w-64 md:w-80">
-        <h2 class="text-3xl md:text-5xl font-bold">Skills</h2>
-    </div>
-
-    <div class="pt-8 md:pt-12">
-        <ul class="text-xl md:text-3xl font-bold list-disc pl-5 md:pl-12">
-            <li>
-                <span>Programming Languanges [C, C++, python, go, php, javascript]</span>
-            </li>
-            <li class="pt-4">
-                <span>Frontend Web Dev. [Javascript, html, css, Vue, tailwind, bootstrap]</span>
-            </li>
-            <li class="pt-4">
-                <span>Backend Web Dev. [php, Laravel,sql]</span>
-            </li>
-            <li class="pt-4">
-                <span>Microcontroller [Arduino]</span>
-            </li>
-            <li class="pt-4">
-                <span>Communication [Public Speaking, Team Communication, Collaboration]</span>
-            </li>
-        </ul>
-    </div>
-</section>
-
-<div class="px-5 md:px-12 pt-12 md:pt-20">
-    <div class="h-1 w-full bg-priority4 rounded-full"></div>
-</div>
-
-<section id="experiences" class="pt-12 md:pt-20 flex flex-col items-center px-12">
-    <div class="flex justify-center border-8 border-priority2 px-4 py-4 w-64 md:w-80">
-        <h2 class="text-3xl md:text-5xl font-bold">Experiences</h2>
-    </div>
-
-    <div class="pt-12">
-        <div class="lg:w-96 lg:h-64 md:w-72 md:h-full w-60 h-full bg-priority2 rounded-3xl">
-            <div class="relative bg-priority5 mx-6 p-4 rounded-3xl top-4">
-                <h3 class="text-priority2 text-center text-xl font-bold">For Now..</h3>
+<body class="bg-black-900">
+    <section class="max-md:px-5 max-md:pt-5 px-14 pt-14 font-Saira">
+        <nav class="flex flex-wrap items-center justify-between mx-auto">
+            <img class="max-md:w-9 w-12" src="/assets/favicon_amf/android-chrome-192x192.png" alt="">
+            <div class=" max-md:hidden">
+                <ul class="flex text-2xl text-white justify-between">
+                    <li class="mx-2">
+                        <button class="duration-150 ease-in-out hover:scale-105 hover:text-yellow-200 focus:text-yellow-200">home</button> 
+                    </li>
+                    <li class="mx-2">
+                        <button class="duration-150 ease-in-out hover:scale-105 hover:text-yellow-200 focus:text-yellow-200">services</button> 
+                    </li>
+                    <li class="mx-2">
+                        <button class="duration-150 ease-in-out hover:scale-105 hover:text-yellow-200 focus:text-yellow-200">portfolio</button> 
+                    </li>
+                    <li class="mx-2">
+                        <button class="duration-150 ease-in-out hover:scale-105 hover:text-yellow-200 focus:text-yellow-200">contact</button> 
+                    </li>
+                    
+                </ul>
             </div>
-            <div class="mt-8 px-6">
-                <p class="text-center text-lg text-priority1">For Now, My Experiences available on LinkedIn Profile, so click the link below</p>
-            </div>
-            <div class="mt-4 w-full h-1 bg-priority5">
-            </div>
-            <div class="text-center pt-4 px-5 lg:pb-0 pb-4 items-center">
-                <a href="https://www.linkedin.com/in/adhi-muhammad-fahmi-571317213/" target="_blank" rel="noopener noreferrer">
-                    <button class="bg-priority1 text-priority2 p-2 px-4 rounded-xl duration-300 hover:ease-out hover:scale-105 hover:duration-300 hover:bg-priority5">Visit My
-                        <i class="fa-brands fa-linkedin w-5 h-5 md:w-5 md:h-5 text-priority2 duration-300 hover:ease-out hover:scale-105 hover:duration-300"></i>
-                    </button>
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-<div class="px-5 md:px-12 pt-12 md:pt-20">
-    <div class="h-1 w-full bg-priority4 rounded-full"></div>
-</div>
-
-<section id="projects" class="pt-12 md:pt-20 flex flex-col items-center md:px-12 px-2">
-    <div class="flex justify-center border-8 border-priority2 px-4 py-4 w-64 md:w-80">
-        <h2 class="text-3xl md:text-5xl font-bold">Projects</h2>
-    </div>
-    <div class="pt-12 w-full">
-        <div>
-            <div class="swiper">
-            <div class="swiper-wrapper">
-              <!-- Slides -->
-              <div class="swiper-slide">
-                <div class="lg:w-96 lg:h-64 md:w-72 md:h-full w-60 h-full bg-priority5 rounded-3xl">
-                    <div class="relative bg-priority2 mx-6 p-4 rounded-3xl top-4">
-                        <h3 class="text-priority1 text-center text-xl">Trijayacoco website</h3>
-                    </div>
-                    <div class="mt-8 px-6">
-                        <p class="text-center text-lg">Trijayacoco Website is a company website about Coconut Products</p>
-                    </div>
-                    <div class="mt-4 w-full h-1 bg-priority2">
-                    </div>
-                    <div class="text-center pt-4 px-5 lg:pb-0 pb-4">
-                        <a href="https://trijayacoco.com/" target="_blank" rel="noopener noreferrer">
-                            <button class="bg-priority4 text-priority1 p-2 rounded-xl duration-300 hover:ease-out hover:scale-105 hover:duration-300 hover:bg-priority2">Visit The Website</button>
+            <div>
+                <ul class="flex">
+                    <li>
+                        <a href="https://www.instagram.com/adhiiimf/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands text-gray-200 fa-instagram w-8 h-8 md:w-10 md:h-10 text-priority3 duration-300 hover:ease-out hover:scale-105 hover:duration-300"></i>
                         </a>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="lg:w-96 lg:h-64 md:w-72 md:h-full w-64 h-full bg-priority5 rounded-3xl">
-                    <div class="relative bg-priority2 mx-6 p-4 rounded-3xl top-4">
-                        <h3 class="text-priority1 text-center text-xl">Grab It Fast Telkom 2021</h3>
-                    </div>
-                    <div class="mt-8 px-6">
-                        <p class="text-center text-lg">Event Website for Music Festival and Talkshow Grab It Fast 2021</p>
-                    </div>
-                    <div class="mt-4 w-full h-1 bg-priority2">
-                    </div>
-                    <div class="text-center pt-4 px-5 lg:pb-0 pb-4">
-                        <a href="https://github.com/adhiiimf/grabitfastdev21" target="_blank" rel="noopener noreferrer">
-                            <button class="bg-priority4 text-priority1 p-2 rounded-xl duration-300 hover:ease-out hover:scale-105 hover:duration-300 hover:bg-priority2">Visit The Resource</button>
+                    </li>
+                    <li class="mx-3">
+                        <a href="https://github.com/adhiiimf" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands text-gray-200 fa-github w-8 h-8 md:w-10 md:h-10 text-priority3 duration-300 hover:ease-out hover:scale-105 hover:duration-300"></i>
                         </a>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="lg:w-96 lg:h-64 md:w-72 md:h-full w-64 h-full bg-priority5 rounded-3xl">
-                    <div class="relative bg-priority2 mx-6 p-4 rounded-3xl top-4">
-                        <h3 class="relative text-priority1 text-center text-xl">Daskom Recruitment Website</h3>
-                    </div>
-                    <div class="mt-8 px-6">
-                        <p class="text-center text-lg">Website about announcements and all About Daskom Recruitment 2021</p>
-                    </div>
-                    <div class="mt-4 w-full h-1 bg-priority2">
-                    </div>
-                    <div class="text-center pt-4 px-5 lg:pb-0 pb-4">
-                        <a href="https://github.com/Daskom-Lab/daskomrec21" target="_blank" rel="noopener noreferrer">
-                            <button class="bg-priority4 text-priority1 p-2 rounded-xl duration-300 hover:ease-out hover:scale-105 hover:duration-300 hover:bg-priority2">Visit The Resource</button>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/adhi-muhammad-fahmi-571317213/" target="_blank" rel="noopener noreferrer">
+                            <i class="fa-brands text-gray-200 fa-linkedin w-8 h-8 md:w-10 md:h-10 text-priority3 duration-300 hover:ease-out hover:scale-105 hover:duration-300"></i>
                         </a>
-                    </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="lg:w-96 lg:h-64 md:w-72 md:h-full w-64 h-full bg-priority5 rounded-3xl">
-                    <div class="relative bg-priority2 mx-6 p-4 rounded-3xl top-4">
-                        <h3 class="relative text-priority1 text-center text-xl">Albacadabra 2018 Website</h3>
-                    </div>
-                    <div class="mt-8 px-6">
-                        <p class="text-center text-lg">Albacadabra 2018 Website for Albayan 2018 Events <b> [my first project web dev.]</b></p>
-                    </div>
-                    <div class="mt-4 w-full h-1 bg-priority2">
-                    </div>
-                    <div class="text-center pt-4 px-5 lg:pb-0 pb-4">
-                        <a href="https://github.com/adhiiimf/abcd18" target="_blank" rel="noopener noreferrer">
-                            <button class="bg-priority4 text-priority1 p-2 rounded-xl duration-300 hover:ease-out hover:scale-105 hover:duration-300 hover:bg-priority2">Visit The Resource</button>
-                        </a>
-                    </div>
-                </div>
-              </div>
+                    </li>
+                </ul>
             </div>
-          
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev text-priority2 font-bold"></div>
-            <div class="swiper-button-next text-priority2 font-bold"></div>
-          
-          </div>
-        </div>
-    </div>
-</section>
-
-<footer class="pt-20 flex flex-col">
-    <div class="text-center py-6 bg-priority2 text-priority1">
-        <span class="font-bold text-lg">Created by Adhi</span>
-    </div>
-</footer>
-
+        </nav>
+    </section>
 </body>
-<script src="/js/swiperCustom.js"></script>
-<script>
-
-    function scrollToElement(el) {
-        var rect = document.getElementById(el).getBoundingClientRect();
-        window.scrollBy({
-            top: rect.top - 50,
-            behavior: 'smooth'
-        });
-    }
-</script>
 </html>
