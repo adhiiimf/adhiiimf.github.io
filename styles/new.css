@@ -97,6 +97,15 @@ p{
     border: #ffff solid 5px;
 }
 
+.contactItem>a{
+    color: #ffff;
+    transition: 0.3s;
+}
+.contactItem>a:hover{
+    color: #ECCB56;
+    transition: 0.3s;
+}
+
 /* summary style */
 
 .summaryStyle{
@@ -222,6 +231,8 @@ p{
     color: #3CE96C;
     --swiper-theme-color: #923CE9;
 }
+
+
 
 
 /* sm */

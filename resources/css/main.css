@@ -1518,8 +1518,8 @@ a {
 }
 
 @media (max-width: 380px) {
-  .max-\[380px\]\:h-\[500px\] {
-    height: 500px;
+  .max-\[380px\]\:h-\[480px\] {
+    height: 480px;
   }
 }
 
@@ -1538,6 +1538,12 @@ a {
   .max-\[350px\]\:px-\[20px\] {
     padding-left: 20px;
     padding-right: 20px;
+  }
+}
+
+@media (max-width: 324px) {
+  .max-\[324px\]\:h-\[485px\] {
+    height: 485px;
   }
 }
 
