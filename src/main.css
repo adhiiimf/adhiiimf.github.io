@@ -3,5 +3,14 @@
 @tailwind utilities;
 
 @layer components {
-    @import url('https://fonts.googleapis.com/css2?family=Saira&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+    hr {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        border: solid;
+        color: #15211C;
+    }
+    a {
+        color: #6AF6BD;
+    }
 }
